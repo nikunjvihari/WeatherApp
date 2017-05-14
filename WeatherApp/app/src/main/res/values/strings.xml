@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather App</string>
+
+
+    <string name="condition">condition</string>
+    <string name="location">location</string>
+    <string name="temperature">temperature</string>
+    <string name="humidity">humidity</string>
+    <string name="enterCityTextView">Enter the City Name</string>
+    <string name="title_activity_forecast">Forecast</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

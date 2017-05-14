@@ -1,0 +1,155 @@
+<!--suppress AndroidDomInspection -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherIconImageView"
+        android:src="@drawable/na"
+        android:layout_below="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temperature"
+        android:id="@+id/temperatureTextView"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#010101"
+        android:layout_below="@+id/weatherIconImageView"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#ffffff"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="8"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/condition"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="8"
+        android:shadowColor="#ffffff"
+        android:id="@+id/conditionTextView"
+        android:textColor="#010101"
+        android:layout_below="@+id/temperatureTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/humidity"
+        android:id="@+id/humidityTextView"
+        android:textColor="#010101"
+        android:shadowColor="#ffffff"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="8"
+        android:layout_below="@+id/conditionTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/location"
+        android:id="@+id/locationTextView"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        android:textColor="#010101"
+        android:shadowColor="#ffffff"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="8"
+        android:layout_below="@+id/humidityTextView"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textColorHighlight="#ffffff"
+    android:textColorLink="#ffffff"
+    android:hint="Start typing.."
+    android:textColorHint="#ffffff"
+    android:id="@+id/inputTextView"
+    android:editable="true"
+    android:inputType="textCapCharacters"
+    android:layout_marginTop="30dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:textStyle="italic"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    android:textColor="#ffffff"
+    android:ems="10"
+    >
+    <requestFocus />
+    </AutoCompleteTextView>
+
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enterCityTextView"
+        android:id="@+id/enterCityTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:textColor="#010101"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:layout_below="@+id/inputTextView"
+        android:layout_centerHorizontal="true" />
+
+     <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Default City"
+        android:textColor="#000000"
+        android:id="@+id/saveButton"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:layout_below="@+id/autoDetect"
+        android:layout_centerHorizontal="true"  />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Auto Detect"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:textColor="#000000"
+        android:id="@+id/autoDetect"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"  />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Forecast"
+        android:id="@+id/button2"
+        android:textColor="#010101"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:layout_below="@+id/locationTextView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
